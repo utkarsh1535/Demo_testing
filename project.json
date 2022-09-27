@@ -1,0 +1,96 @@
+{
+  "name": "Demo project",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "GoogleMaps.Core": "[1.0.0]",
+    "GoogleMaps.LocationServices": "[1.2.0.5]",
+    "GoogleMapServices": "[1.3.1]",
+    "GoogleMapsServicesClient.NETStandard": "[1.0.3]",
+    "ImageComponents.Core.Imaging": "[4.0.0.2]",
+    "ImageComponents.Win32.Imaging": "[4.0.0.2]",
+    "UiPath": "[22.4.42.61951]",
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.GoogleVision.Activities": "[1.3.1]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.5]",
+    "UiPath.Testing.Activities": "[22.4.3]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]",
+    "UiPath.WebAPI.Activities": "[1.11.2]",
+    "UiPathTeam.Runtime.Activities": "[2.0.0]",
+    "UiPathTeam.TwoStepAuthentication.Activities": "[2.0.1]",
+    "Universal.Google.Maps": "[1.0.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.3.0",
+  "projectVersion": "1.0.4",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "34fbc81e-6034-469c-b9ae-e40ef6f8a726",
+        "testCaseType": "TestCase",
+        "fileName": "TC001.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ab4cc63b-a33a-4c15-9e39-ac55d2692249",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "13fec9b6-6c4b-44f7-9109-72cfa1ec31eb",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase2.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3b531e28-7ddf-4c62-9874-8e5122210aa6",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase3 Issue.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "32372b59-c222-4719-b442-2b99b9fed052",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

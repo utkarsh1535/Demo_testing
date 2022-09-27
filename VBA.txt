@@ -1,0 +1,16 @@
+Sub GetPic()
+Dim fNameAndPath As Variant
+Dim img As Picture
+fNameAndPath = Application.GetOpenFilename(Title:="Select Picture To Be Imported")
+If fNameAndPath = False Then Exit Sub
+    Set img = ActiveSheet.Pictures.Insert(fNameAndPath)
+    With img
+       'Resize Picture to fit in the range....
+       .Left = ActiveSheet.Range("D9").Left
+       .Top = ActiveSheet.Range("D9").Top
+       .Width = ActiveSheet.Range("D9:H9").Width
+       .Height = ActiveSheet.Range("D9:D28").Height
+       .Placement = 1
+       .PrintObject = True
+    End With
+End Sub
