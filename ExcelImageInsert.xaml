@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExcelImageInsert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,6147" sap2010:WorkflowViewState.IdRef="ExcelImageInsert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExcelImageInsert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,6439" sap2010:WorkflowViewState.IdRef="ExcelImageInsert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
@@ -99,7 +99,7 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExcelImageInsert" sap:VirtualizedContainerService.HintSize="572,6082" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExcelImageInsert" sap:VirtualizedContainerService.HintSize="572,6374" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:DirectoryInfo" Name="GetFolderInfo" />
       <Variable x:TypeArguments="ui:Image" Name="read1" />
@@ -117,13 +117,13 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="530,5990" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="all data.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="530,6282" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="all data.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,5881" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,6173" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="DataTablREad" />
               <Variable x:TypeArguments="x:Int32" Name="Index" />
@@ -164,7 +164,7 @@
                 <InArgument x:TypeArguments="x:Int32">1</InArgument>
               </Assign.Value>
             </Assign>
-            <Sequence sap:VirtualizedContainerService.HintSize="454,2322" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence sap:VirtualizedContainerService.HintSize="454,2468" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -183,9 +183,9 @@
                   </ui:CursorPosition>
                 </ui:Click.CursorPosition>
                 <ui:Click.Target>
-                  <ui:Target Element="{x:Null}" Id="95bd8202-1376-43ee-b44a-bd53e1466c16" InformativeScreenshot="1f8a97f82ee3156fcc5049e6354effb6" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                  <ui:Target Element="{x:Null}" Id="95bd8202-1376-43ee-b44a-bd53e1466c16" InformativeScreenshot="09fd784ceefae506235afdbb8d73d1f6" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
                     <ui:Target.ClippingRegion>
-                      <ui:Region Rectangle="275, 96, 270, 82" />
+                      <ui:Region Rectangle="906, 60, 274, 35" />
                     </ui:Target.ClippingRegion>
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
@@ -442,11 +442,36 @@
                   </ui:Target>
                 </ui:Click.Target>
               </ui:Click>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Sheet1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_62" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target Element="{x:Null}" Id="172361fd-5105-4302-b5da-0241b0235b98" InformativeScreenshot="ce96a9f42fccc08046ef43db9a39c94c" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                    <ui:Target.ClippingRegion>
+                      <ui:Region Rectangle="990, 57, 185, 42" />
+                    </ui:Target.ClippingRegion>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
               <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Sheet Sheet1'" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
                 <ui:SendHotkey.Target>
-                  <ui:Target Element="{x:Null}" Id="17e88514-e28c-4f5f-98f2-555992a509f1" InformativeScreenshot="87f192763efc2d2292cfaa193acb9071" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                  <ui:Target Element="{x:Null}" Id="17e88514-e28c-4f5f-98f2-555992a509f1" InformativeScreenshot="79fb2eae2178b961e1b9ee590cf7a601" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
                     <ui:Target.ClippingRegion>
-                      <ui:Region Rectangle="364, 181, 180, 67" />
+                      <ui:Region Rectangle="1059, 60, 119, 38" />
                     </ui:Target.ClippingRegion>
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
@@ -466,15 +491,15 @@
                 <InArgument x:TypeArguments="x:Int32">1</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Index&lt;=RowCount]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="454,2559" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Index&lt;=RowCount]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="454,2705" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,2394" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,2540" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap:VirtualizedContainerService.HintSize="376,2302" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,2448" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -501,9 +526,9 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target Element="{x:Null}" Id="95bd8202-1376-43ee-b44a-bd53e1466c16" InformativeScreenshot="3ad2ec75d8d8b626d4ae75eef0ada06f" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="95bd8202-1376-43ee-b44a-bd53e1466c16" InformativeScreenshot="66f309d002a5cc7b2e6b642fdbb08f62" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
                           <ui:Target.ClippingRegion>
-                            <ui:Region Rectangle="276, 94, 273, 84" />
+                            <ui:Region Rectangle="906, 57, 274, 40" />
                           </ui:Target.ClippingRegion>
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
@@ -734,11 +759,36 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Sheet1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_63" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target Element="{x:Null}" Id="6bba61f3-9e27-4bdd-ab1b-851f7f48bc68" InformativeScreenshot="3c755fdd6a7ef2d0338cfaa7b781345f" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                          <ui:Target.ClippingRegion>
+                            <ui:Region Rectangle="988, 63, 188, 30" />
+                          </ui:Target.ClippingRegion>
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
                     <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Sheet Sheet1'" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
                       <ui:SendHotkey.Target>
-                        <ui:Target Element="{x:Null}" Id="17e88514-e28c-4f5f-98f2-555992a509f1" InformativeScreenshot="87f192763efc2d2292cfaa193acb9071" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="17e88514-e28c-4f5f-98f2-555992a509f1" InformativeScreenshot="819b5bb2aee13fa3e56bb14c0491b95b" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='all data - Excel' /&gt;&lt;uia cls='EXCEL7' name='all data' /&gt;&lt;uia name='Sheet Sheet1' /&gt;">
                           <ui:Target.ClippingRegion>
-                            <ui:Region Rectangle="364, 181, 180, 67" />
+                            <ui:Region Rectangle="1027, 60, 147, 33" />
                           </ui:Target.ClippingRegion>
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />

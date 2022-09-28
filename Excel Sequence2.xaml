@@ -123,7 +123,7 @@
                 <InArgument x:TypeArguments="x:Int32">2</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="412,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" Range="I2" SheetName="Sheet1" />
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="412,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" Range="H2" SheetName="Sheet1" />
             <ui:InterruptibleWhile CurrentIndex="[Boolea]" DisplayName="While" sap:VirtualizedContainerService.HintSize="412,416" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -135,7 +135,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ExcelReadCell Cell="[“I2” +Counter.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
+                  <ui:ExcelReadCell Cell="[“H2”+ Counter.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
                     <ui:ExcelReadCell.Result>
                       <OutArgument x:TypeArguments="x:String">[Data]</OutArgument>
                     </ui:ExcelReadCell.Result>
