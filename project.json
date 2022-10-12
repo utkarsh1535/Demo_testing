@@ -83,7 +83,7 @@
         "fileName": "TestCase3 Issue.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
