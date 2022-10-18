@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="for_testing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,9063" sap2010:WorkflowViewState.IdRef="for_testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:do="clr-namespace:DocumentFormat.OpenXml;assembly=DocumentFormat.OpenXml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="for_testing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2306" sap2010:WorkflowViewState.IdRef="for_testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:do="clr-namespace:DocumentFormat.OpenXml;assembly=DocumentFormat.OpenXml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
       <x:String>System.Activities</x:String>
@@ -120,9 +120,9 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="for_testing" sap:VirtualizedContainerService.HintSize="766,8998" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="for_testing" sap:VirtualizedContainerService.HintSize="518,2241" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="search" />
+      <Variable x:TypeArguments="x:Int32" Name="search" />
       <Variable x:TypeArguments="sd:DataTable" Name="ReadExcel" />
       <Variable x:TypeArguments="sd:DataTable" Name="ResultdT" />
       <Variable x:TypeArguments="x:Int32" Name="SerialNo" />
@@ -143,6 +143,7 @@
       <Variable x:TypeArguments="s:String[]" Name="SplitList" />
       <Variable x:TypeArguments="sd:DataTable" Name="ReadCategoryDT" />
       <Variable x:TypeArguments="x:String" Name="ZipCodeJson" />
+      <Variable x:TypeArguments="x:String" Name="MyBusinessCategory" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -150,7 +151,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724,51" sap2010:WorkflowViewState.IdRef="CommentOut_35">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_35">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,143" sap2010:WorkflowViewState.IdRef="Sequence_190">
           <sap:WorkflowViewStateService.ViewState>
@@ -160,7 +161,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Search" Title="Please Insert pin code">
             <ui:InputDialog.Result>
-              <OutArgument x:TypeArguments="x:String">[search]</OutArgument>
+              <OutArgument x:TypeArguments="x:Int32">[search]</OutArgument>
             </ui:InputDialog.Result>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -178,7 +179,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724,51" sap2010:WorkflowViewState.IdRef="CommentOut_36">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_36">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,143" sap2010:WorkflowViewState.IdRef="Sequence_191">
           <sap:WorkflowViewStateService.ViewState>
@@ -206,7 +207,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724,51" sap2010:WorkflowViewState.IdRef="CommentOut_65">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_65">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="810,158" sap2010:WorkflowViewState.IdRef="Sequence_265">
           <sap:WorkflowViewStateService.ViewState>
@@ -834,10 +835,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="DB Connection For Input" sap:VirtualizedContainerService.HintSize="724,489" sap2010:WorkflowViewState.IdRef="Sequence_271">
+    <Sequence DisplayName="DB Connection For Input" sap:VirtualizedContainerService.HintSize="476,1558" sap2010:WorkflowViewState.IdRef="Sequence_271">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Name="RetriveJsonData" />
+        <Variable x:TypeArguments="njl:JToken" Name="RetriveJsonData" />
         <Variable x:TypeArguments="njl:JObject" Name="JsonObjectRes" />
+        <Variable x:TypeArguments="x:Int32" Default="10" Name="Number" />
+        <Variable x:TypeArguments="s:String[]" Name="ParseData" />
+        <Variable x:TypeArguments="x:Int32" Name="VarCount" />
+        <Variable x:TypeArguments="x:Int32" Name="ConditionLen" />
+        <Variable x:TypeArguments="x:Int32" Name="CategoryCount" />
+        <Variable x:TypeArguments="x:Int32" Name="CategoryLen" />
+        <Variable x:TypeArguments="njl:JToken" Name="FilterData" />
+        <Variable x:TypeArguments="x:String" Name="ZipCodeData" />
+        <Variable x:TypeArguments="njl:JObject" Name="JsonObjZipCode" />
+        <Variable x:TypeArguments="njl:JToken" Name="RetriveZipCodes" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -845,7 +856,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" ContinueOnError="True" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://192.168.20.96:8000/getCategoryData" sap:VirtualizedContainerService.HintSize="431,57" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Password="[Nothing]" Result="[ZipCodeJson]" TimeoutMS="15000" Username="[Nothing]">
+      <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" ContinueOnError="True" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://192.168.20.96:8000/getCategoryData" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Password="[Nothing]" Result="[ZipCodeJson]" TimeoutMS="15000" Username="[Nothing]">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -862,35 +873,133 @@
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="431,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[JsonObjectRes]" JsonString="[ZipCodeJson]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="431,61" sap2010:WorkflowViewState.IdRef="WriteLine_110" Text="[JsonObjectRes.ToString]" />
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[JsonObjectRes]" JsonString="[ZipCodeJson]" />
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
               <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[RetriveJsonData]</OutArgument>
+                <OutArgument x:TypeArguments="njl:JToken">[RetriveJsonData]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[JsonObjectRes("data")(0).ToString]</InArgument>
+                <InArgument x:TypeArguments="njl:JToken">[JsonObjectRes("response")("data")]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
+      <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,377" sap2010:WorkflowViewState.IdRef="ForEach`1_32" Values="[RetriveJsonData]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="njl:JToken">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="njl:JToken" Name="item" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_286">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_185">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[MyBusinessCategory]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[item("BusinessCategory").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_109" Text="[MyBusinessCategory]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+      <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" ContinueOnError="True" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://148.76.75.204:8079/getZipData" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="HttpClient_4" Method="GET" Password="[Nothing]" Result="[ZipCodeData]" TimeoutMS="15000" Username="[Nothing]">
+        <ui:HttpClient.Attachments>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Attachments>
+        <ui:HttpClient.Cookies>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Cookies>
+        <ui:HttpClient.Headers>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Headers>
+        <ui:HttpClient.Parameters>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.Parameters>
+        <ui:HttpClient.UrlSegments>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+        </ui:HttpClient.UrlSegments>
+      </ui:HttpClient>
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[JsonObjZipCode]" JsonString="[ZipCodeData]" />
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="njl:JToken">[RetriveZipCodes]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="njl:JToken">[JsonObjZipCode("response")("data")]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:MultipleAssign>
+      <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,377" sap2010:WorkflowViewState.IdRef="ForEach`1_36" Values="[RetriveZipCodes]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="njl:JToken">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="njl:JToken" Name="itemZipCode" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_288">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="MyZipCode" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_187">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[MyZipCode]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[itemZipCode("PinCode").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_110" Text="[MyZipCode]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
     </Sequence>
-    <Sequence DisplayName="Store Link in Excel" sap:VirtualizedContainerService.HintSize="724,7892" sap2010:WorkflowViewState.IdRef="Sequence_204">
+    <Sequence DisplayName="Store Link in Excel" sap:VirtualizedContainerService.HintSize="476,66" sap2010:WorkflowViewState.IdRef="Sequence_204">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Int32" Name="Index">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Int32" Value="1" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:Int32" Default="1" Name="Index" />
         <Variable x:TypeArguments="sd:DataTable" Name="BuildZipandCategoryDT" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -1039,7 +1148,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:TypeInto>
-                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While loop" sap:VirtualizedContainerService.HintSize="454,3236" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Index&lt;3]" DisplayName="While loop" sap:VirtualizedContainerService.HintSize="454,3236" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                 <ui:InterruptibleWhile.Body>
                                   <Sequence DisplayName="Extract Link" sap:VirtualizedContainerService.HintSize="418,3071" sap2010:WorkflowViewState.IdRef="Sequence_71">
                                     <Sequence.Variables>
@@ -1480,9 +1589,6 @@
                                     <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Name_Category, Zip_Code}]" DataTable="[BuildZipandCategoryDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="AddDataRow_27" />
                                   </Sequence>
                                 </ui:InterruptibleWhile.Body>
-                                <ui:InterruptibleWhile.Condition>
-                                  <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Index&lt;3" />
-                                </ui:InterruptibleWhile.Condition>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1879,7 +1985,7 @@
         <ui:WriteRange AddHeaders="True" DataTable="[ResultdT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="WriteRange_8" SheetName="Sheet1" StartingCell="A1" WorkbookPath="googlemaplink.xlsx" />
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="724,66" sap2010:WorkflowViewState.IdRef="Sequence_50">
+    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="476,66" sap2010:WorkflowViewState.IdRef="Sequence_50">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="totalrows" />
         <Variable x:TypeArguments="sd:DataTable" Name="ReadGooglelink" />
@@ -3546,7 +3652,7 @@
         <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="googlemapjson.json" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[Excel_Json]" />
       </Sequence>
     </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="724,66" sap2010:WorkflowViewState.IdRef="Sequence_268">
+    <Sequence sap:VirtualizedContainerService.HintSize="476,66" sap2010:WorkflowViewState.IdRef="Sequence_268">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="ReadJsonfile" />
         <Variable x:TypeArguments="njl:JArray" Name="DeserializeJsonFile" />
