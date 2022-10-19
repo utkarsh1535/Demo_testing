@@ -1,7 +1,7 @@
 {
   "name": "Demo project",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "GoogleMap Project Workflow.xaml",
   "dependencies": {
     "GoogleMaps.Core": "[1.0.0]",
     "GoogleMaps.LocationServices": "[1.2.0.5]",
@@ -90,6 +90,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "32372b59-c222-4719-b442-2b99b9fed052",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "GoogleMap Project Workflow.xaml",
+      "uniqueId": "a5fc85ae-58f4-43cb-ab17-2ac6cd897c4c",
       "input": [],
       "output": []
     }
